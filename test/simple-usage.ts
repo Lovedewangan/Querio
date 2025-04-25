@@ -17,8 +17,8 @@ async function runDemo() {
         }
       ]
     },
-    question: "List all user names and emails.",
-    model: "mistralai/Mistral-7B-Instruct-v0.2", // ✅ Supported model
+    question: "Show all users with email ending in '@gmail.com'",
+    model: "distilgpt2", // Using Mistral instead
     temperature: 0.1
   };
 

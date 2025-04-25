@@ -15,8 +15,7 @@ export async function generateQuery(request: QueryRequest): Promise<QueryRespons
     const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
     
     // Using Mistral-7B which is widely available
-const model = request.model || "mistralai/Mistral-7B-Instruct-v0.2";
-
+    const model = request.model || "distilgpt2";
     
     const response = await hf.textGeneration({
       model: model,
